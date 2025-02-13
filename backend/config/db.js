@@ -1,6 +1,6 @@
 // const mysql = require("mysql2");
 
-// require("dotenv").config();
+require("dotenv").config();
 
 // const db = mysql.createPool({
 //   host: process.env.DB_HOST,
@@ -29,10 +29,10 @@ const connection = mysql.createConnection({
 
 connection.connect((err) => {
   if (err) {
-    console.error("❌ MySQL Connection Failed:", err);
+    console.error(" MySQL Connection Failed:", err);
     return;
   }
-  console.log("✅ Connected to Clever");
+  console.log(" Connected to Clever");
 });
 
 module.exports = connection;
