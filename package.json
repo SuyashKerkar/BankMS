@@ -12,8 +12,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "vite": "^6.1.0"
-  }
+  },
+  "dependencies": {
+    "esbuild": "^0.24.2",
+    "nanoid": "^3.3.8",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.2",
+    "rollup": "^4.34.6",
+    "source-map-js": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuyashKerkar/BankMS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SuyashKerkar/BankMS/issues"
+  },
+  "homepage": "https://github.com/SuyashKerkar/BankMS#readme",
+  "description": ""
 }
