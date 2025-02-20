@@ -35,7 +35,7 @@ const Login = () => {
 
       alert("Login successful!");
       navigate("/dashboard");
-      window.location.reload(); // ✅ Redirect to dashboard
+      window.location.reload(); // Redirect to dashboard
     } catch (err) {
       setError(err.message);
     } finally {

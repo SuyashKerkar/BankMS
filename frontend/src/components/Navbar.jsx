@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="p-4 bg-blue-600 text-white flex justify-between items-center shadow-md">
-      <h1 className="text-xl font-bold ">Banking App</h1>
+      <h1 className="text-xl font-bold ">MYBANK App</h1>
       <div className="flex items-center gap-4">
         {user ? (
           <>

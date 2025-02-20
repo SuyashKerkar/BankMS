@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { getTransactions } from "../services/transactionService";
 import { AuthContext } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
 const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
@@ -31,6 +32,13 @@ const Transactions = () => {
   return (
     <div className="max-w-2xl mx-auto p-6">
       <h2 className="text-xl font-bold">Transaction History</h2>
+      <div className="mt-4">
+        <Link to="/" className="text-blue-500 hover:text-blue-700">
+          <button className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700">
+            Go Home
+          </button>
+        </Link>
+      </div>
       <ul className="mt-4 border rounded-lg p-4">
         {transactions.length === 0 ? (
           <p>No transactions yet.</p>
